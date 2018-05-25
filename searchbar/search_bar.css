@@ -1,0 +1,28 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333333;
+  color: #cccccc;
+  font-size: 15px;
+}
+
+#reg-search {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+#actions {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  padding: 10px 0;
+}

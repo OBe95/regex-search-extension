@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "RegSearch",
+  "version": "1.0",
+  "description": "Allows search on active tab using regular expressions",
+  "homepage_url": "https://github.com/OBe95/reg-search",
+  "icons": {
+    "48": "icons/reg-search-48.png",
+    "96": "icons/reg-search-96.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "sidebar_action": {
+    "default_icon": "icons/reg-search-32.png",
+    "default_title": "RegSearch",
+    "default_panel": "searchbar/search_bar.html"
+  },
+  "commands": {
+    "_execute_sidebar_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F"
+      }
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content_scripts/reg_search.js"
+      ]
+    }
+  ]
+}
